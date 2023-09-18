@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url(/fonts/Montserrat-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Medium';
+  src: url(/fonts/Montserrat-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'SemiBold';
+  src: url(/fonts/Montserrat-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Bold';
+  src: url(/fonts/Montserrat-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Changa One';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/ChangaOne-Italic.woff2) format("woff2");
+}
+/* latin */
+@font-face {
+  font-family: 'Changa One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/ChangaOne-Regular.woff2) format("woff2");
+}
+
+:root {
+  --primary-color: #602817;
+  --background-color: #FEEEDF;
+  --accent-color: #FFC727;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6C493F;
+  border-radius: 4px;
+}

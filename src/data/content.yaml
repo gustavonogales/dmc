@@ -1,0 +1,38 @@
+cta: Agende agora!
+welcome:
+  title: Atendimento Personalizado
+  description: Na Fisioterapia, entendemos a 
+    importância de fornecer um cuidado personalizado e eficaz para cada indivíduo, 
+    firmando o compromisso de te ajudar a atingir seus objetivos.
+professional:
+  name: Débora Martins Corrêa
+  id: 'CREFITO 3: 326975-F'
+  description: Na Fisioterapia, entendemos a importância de fornecer um cuidado 
+    personalizado e eficaz para cada indivíduo, firmando o compromisso de te 
+    ajudar a atingir seus objetivos.
+  reviews:
+    title: Depoimentos
+    items:
+      - name: Gustavo Oquendo Nogales
+        content: Na Fisioterapia, entendemos a importância de fornecer um cuidado 
+          personalizado e eficaz para cada indivíduo, firmando o compromisso de te 
+          ajudar a atingir seus objetivos.
+      - name: Cleide Leone
+        content: Na Fisioterapia, entendemos a importância de fornecer um cuidado 
+          personalizado e eficaz para cada indivíduo, firmando o compromisso de te 
+          ajudar a atingir seus objetivos.
+      - name: Bruno Martins Corrêa
+        content: Na Fisioterapia, entendemos a importância de fornecer um cuidado 
+          personalizado e eficaz para cada indivíduo, firmando o compromisso de te 
+          ajudar a atingir seus objetivos.
+contact:
+  title: Agende sua consulta
+  description: Na Fisioterapia, entendemos a importância de fornecer um cuidado 
+    personalizado e eficaz para cada indivíduo, firmando o compromisso de te 
+    ajudar a atingir seus objetivos.
+  whatsapp: +55 11 94714-3859
+  instagram: '@_deboramcorrea'
+  email: deboramcorrea@gmail.com
+footer:
+  copyright: Todos os direitos reservados | 2023
+  poweredBy: Desenvolvido por

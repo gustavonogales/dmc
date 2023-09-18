@@ -1,0 +1,37 @@
+{
+  "name": "dmc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Débora Martins Correa",
+  "author": "Gustavo Oquendo Nogales",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.15",
+    "gatsby": "^5.12.4",
+    "gatsby-plugin-csp": "^1.1.4",
+    "gatsby-plugin-google-gtag": "^5.12.0",
+    "gatsby-plugin-image": "^3.12.0",
+    "gatsby-plugin-manifest": "^5.12.0",
+    "gatsby-plugin-postcss": "^6.12.0",
+    "gatsby-plugin-sharp": "^5.12.0",
+    "gatsby-plugin-sitemap": "^6.12.0",
+    "gatsby-source-filesystem": "^5.12.0",
+    "gatsby-transformer-sharp": "^5.12.0",
+    "gatsby-transformer-yaml": "^5.12.0",
+    "postcss": "^8.4.29",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-multi-carousel": "^2.8.4",
+    "tailwindcss": "^3.3.3"
+  }
+}
