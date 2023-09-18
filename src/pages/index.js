@@ -58,6 +58,8 @@ export default IndexPage
 
 export const Head = () => (
   <>
+    <html className="scroll-smooth" lang="pt-BR" />
+    <body className="bg-background" />
     <title>Débora Martins Corrêa - Fisioterapeuta</title>
     <meta name="description" content="Débora Martins Correa Fisioterapeuta" />
   </>
