@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react'
 import { Button } from './Button'
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from 'gatsby'
 
-export function CtaButton({className, children, ...props}) {
-  const { dataYaml: { cta } } = useStaticQuery(graphql`
+export function CtaButton({ className, children, ...props }) {
+  const {
+    dataYaml: { cta },
+  } = useStaticQuery(graphql`
     query {
       dataYaml {
         cta
@@ -12,6 +14,8 @@ export function CtaButton({className, children, ...props}) {
   `)
 
   return (
-    <Button href="#contact" className={`hidden md:block text-sm ${className}`}>{cta}</Button>
+    <Button href="#contact" className={`hidden md:block text-sm ${className}`}>
+      {cta}
+    </Button>
   )
 }

@@ -12,6 +12,7 @@
     ```shell
     npm i && npm run develop
     ```
+
 1.  **Build production**
 
     Install the dependencies and run the gatsby build script
@@ -19,8 +20,9 @@
     ```shell
     npm i && npm run build
     ```
-    
+
     If you want to preview the builded version, run the serve script
+
     ```shell
     npm run serve
     ```

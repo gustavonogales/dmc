@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const TreatmentsSection = React.forwardRef((props,ref) => {
+export const TreatmentsSection = React.forwardRef((props, ref) => {
   return (
-    <h1 ref={ref} {...props}>Treatments</h1>
+    <h1 ref={ref} {...props}>
+      Treatments
+    </h1>
   )
 })

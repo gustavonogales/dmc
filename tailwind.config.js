@@ -6,21 +6,21 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'body': ['Montserrat', 'sans-serif'],
-      'display': ['Changa One', 'serif'],
+      body: ['Montserrat', 'sans-serif'],
+      display: ['Changa One', 'serif'],
     },
     lineHeight: {
       body: '1.85rem',
     },
     minHeight: {
-      '80': '20rem',
+      80: '20rem',
     },
     extend: {
       colors: {
-        'primary': 'var(--primary-color)',
-        'background': 'var(--background-color)',
-        'accent': 'var(--accent-color)',
-      }
+        primary: 'var(--primary-color)',
+        background: 'var(--background-color)',
+        accent: 'var(--accent-color)',
+      },
     },
   },
   plugins: [],
