@@ -1,5 +1,6 @@
 import React, { useMemo, useState, useEffect } from 'react'
 import { NavLink } from './NavLink'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 import { StaticImage } from 'gatsby-plugin-image'
 import { HamburguerIcon } from './icons/HamburguerIcon'
 import { XIcon } from './icons/XIcon'
@@ -90,7 +91,7 @@ export function Header({ sections }) {
         </a>
         <nav className="hidden md:flex gap-4 lg:gap-8">{links}</nav>
         <div className="hidden md:flex">
-          <a
+          <OutboundLink
             href={whatsapp}
             target="_blank"
             rel="noreferrer"
@@ -98,8 +99,8 @@ export function Header({ sections }) {
             title="Whatsapp"
           >
             <WhatsappIcon className="inline" />
-          </a>
-          <a
+          </OutboundLink>
+          <OutboundLink
             href={instagram}
             target="_blank"
             rel="noreferrer"
@@ -107,7 +108,7 @@ export function Header({ sections }) {
             title="Instagram"
           >
             <InstagramIcon className="inline" />
-          </a>
+          </OutboundLink>
           <CtaButton className="ml-2" href={lastSectionId}>
             {cta}
           </CtaButton>

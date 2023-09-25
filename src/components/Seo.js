@@ -6,14 +6,12 @@ export const Seo = ({ title, description, pathname, children }) => {
     title: defaultTitle,
     description: defaultDescription,
     siteUrl,
-    lorem,
   } = useSiteMetadata()
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
-    lorem,
   }
 
   return (

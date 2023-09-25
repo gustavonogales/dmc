@@ -6,7 +6,6 @@ module.exports = {
     title: 'Débora Martins Corrêa - Fisioterapeuta',
     siteUrl: 'https://deboramartinscorrea.netlify.app/',
     description: 'Débora Martins Correa Fisioterapeuta',
-    lorem: 'ipsum',
   },
   plugins: [
     'gatsby-plugin-postcss',
@@ -36,17 +35,6 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-csp`,
-    //   options: {
-    //     mergeScriptHashes: false,
-    //     mergeStyleHashes: false,
-    //     directives: {
-    //       'style-src': "'self' 'unsafe-inline'",
-    //       'script-src': "'self' 'unsafe-inline'",
-    //     },
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {

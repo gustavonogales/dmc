@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 import { useStaticQuery, graphql } from 'gatsby'
 import { WhatsappIcon } from '../icons/WhatsappIcon'
 import { InstagramIcon } from '../icons/InstagramIcon'
@@ -38,7 +39,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
           </p>
           <ul className="mt-20 text-center lg:text-start">
             <li>
-              <a
+              <OutboundLink
                 href={whatsapp}
                 target="_blank"
                 rel="noreferrer"
@@ -46,10 +47,10 @@ export const ContactSection = React.forwardRef((props, ref) => {
               >
                 <WhatsappIcon className="inline" />
                 <span className="font-bold">{data.whatsapp}</span>
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 href={instagram}
                 target="_blank"
                 rel="noreferrer"
@@ -57,10 +58,10 @@ export const ContactSection = React.forwardRef((props, ref) => {
               >
                 <InstagramIcon className="inline" />
                 <span className="font-bold">{data.instagram}</span>
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 href={email}
                 target="_blank"
                 rel="noreferrer"
@@ -68,7 +69,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
               >
                 <EmailIcon className="inline" />
                 <span className="font-bold">{data.email}</span>
-              </a>
+              </OutboundLink>
             </li>
           </ul>
           <CtaButton
