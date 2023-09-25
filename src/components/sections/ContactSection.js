@@ -5,6 +5,7 @@ import { WhatsappIcon } from '../icons/WhatsappIcon'
 import { InstagramIcon } from '../icons/InstagramIcon'
 import { EmailIcon } from '../icons/EmailIcon'
 import { useSocialMediaLinks } from '../../hooks/useSocialMediaLinks'
+import { CtaButton } from '../CtaButton'
 
 export const ContactSection = React.forwardRef((props, ref) => {
   const { email, instagram, whatsapp } = useSocialMediaLinks()
@@ -19,6 +20,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
           whatsapp
           instagram
           email
+          cta
         }
       }
     }
@@ -27,7 +29,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
   return (
     <section className="bg-background" ref={ref} {...props}>
       <div className="container mx-auto flex flex-col lg:flex-row px-4 py-20 gap-8 lg:gap-20">
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col items-center lg:items-start">
           <h2 className="font-display text-primary text-4xl sm:text-6xl text-center lg:text-start">
             {data.title}
           </h2>
@@ -50,7 +52,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
               <a
                 href={instagram}
                 target="_blank"
-                rel="noreferrer"
+                rel="external"
                 className="text-primary"
               >
                 <InstagramIcon className="inline" />
@@ -61,7 +63,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
               <a
                 href={email}
                 target="_blank"
-                rel="noreferrer"
+                rel="external"
                 className="text-primary"
               >
                 <EmailIcon className="inline" />
@@ -69,6 +71,14 @@ export const ContactSection = React.forwardRef((props, ref) => {
               </a>
             </li>
           </ul>
+          <CtaButton
+            className="mt-20 mb-10 lg:mb-0"
+            href={whatsapp}
+            target="_blank"
+            rel="external"
+          >
+            {data.cta} <span className="font-bold">Whatsapp</span>
+          </CtaButton>
         </div>
         <div className="flex-1 flex-grow">
           <StaticImage

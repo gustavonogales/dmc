@@ -50,14 +50,13 @@ sessions:
       neurológica e/ou físico-motora.
   treatmentSession:
     title: Sessão de Tratamento
-    description: Com duração entre 45 e 60 minutos, apoiado no protocolo de
+    description: "Com duração entre 45 e 60 minutos, apoiado no protocolo de
       exercícios personalizado, o paciente será supervisionado na execução
-      correta dos movimentos e uso de equipamentos.
-      >
+      correta dos movimentos e uso de equipamentos. \n
       Os resultados obtidos na sessão, são registrados e avaliados, para
       garantir uma assistência alinhada aos objetivos estabelecidos desde o
       primeiro contato, além disso, esses resultados são constantemente
-      reavaliados para garantir um acompanhamento contínuo.
+      reavaliados para garantir um acompanhamento contínuo."
   severePainRelief:
     title: Alívio de Dor Intensa
     description: Uma abordagem emergencial, apoiada em técnicas para aliviar

@@ -95,6 +95,7 @@ export function Header({ sections }) {
             target="_blank"
             rel="noreferrer"
             className="text-primary"
+            title="Whatsapp"
           >
             <WhatsappIcon className="inline" />
           </a>
@@ -103,6 +104,7 @@ export function Header({ sections }) {
             target="_blank"
             rel="noreferrer"
             className="text-primary"
+            title="Instagram"
           >
             <InstagramIcon className="inline" />
           </a>

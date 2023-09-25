@@ -34,7 +34,7 @@ export const WelcomeSection = React.forwardRef((props, ref) => {
           <p className="font-body text-sm sm:text-base md:text-lg leading-body text-primary">
             {data.description}
           </p>
-          <CtaButton href={whatsapp} target="_blank">
+          <CtaButton href={whatsapp} target="_blank" rel="external">
             {data.cta} <span className="font-bold">Whatsapp</span>
           </CtaButton>
         </div>
