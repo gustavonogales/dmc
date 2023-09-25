@@ -24,6 +24,7 @@ export function ReviewCard({ title, description, link, ...props }) {
         {description}
       </p>
       <a
+        tabIndex="-1"
         href={link}
         target="_blank"
         rel="noreferrer"

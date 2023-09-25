@@ -26,8 +26,8 @@ export const WelcomeSection = React.forwardRef((props, ref) => {
       ref={ref}
       {...props}
     >
-      <div className="flex gap-10 lg:gap-20 flex-col h-auto lg:flex-row ">
-        <div className="flex-1 flex gap-6 flex-col text-center justify-center lg:text-left items-center lg:items-start sm:py-8">
+      <div className="flex gap-10 xl:gap-0 flex-col h-auto xl:flex-row ">
+        <div className="w-full xl:w-7/12 flex gap-6 flex-col text-center justify-center xl:text-left items-center xl:items-start sm:py-8">
           <h1 className="text-primary font-display line-clamp-2 text-4xl sm:text-6xl md:text-8xl">
             {data.title}
           </h1>
@@ -38,14 +38,12 @@ export const WelcomeSection = React.forwardRef((props, ref) => {
             {data.cta} <span className="font-bold">Whatsapp</span>
           </CtaButton>
         </div>
-        <div className="flex-1 flex xl:justify-end justify-center items-center flex-grow">
+        <div className="w-full xl:w-5/12 flex-1 flex xl:justify-end justify-center items-center flex-grow">
           <StaticImage
-            as="div"
             src={'../../images/old-lady-ball.svg'}
             alt="Físioterapeuta acompanhando o tratamento de uma senhora que está sentada em uma bola de pilates"
             placeholder="blurred"
             quality={100}
-            objectFit="fill"
           />
         </div>
       </div>

@@ -115,6 +115,8 @@ export function Header({ sections }) {
         <button
           className="md:hidden text-primary p-2 transition-all"
           onClick={() => setIsOpen((state) => !state)}
+          aria-label="Menu"
+          title="Menu"
         >
           <HamburguerIcon
             className={`transition-all ${

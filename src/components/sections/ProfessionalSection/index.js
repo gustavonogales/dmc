@@ -134,6 +134,8 @@ const CustomRightArrow = ({ onClick }) => {
     <button
       onClick={onClick}
       className="absolute z-10 right-0 bg-primary opacity-50 p-4 rounded-2xl hover:opacity-100"
+      aria-label="Próximo"
+      title="Próximo"
     >
       <ChevronRightIcon className="text-background font-bold" />
     </button>
@@ -145,6 +147,8 @@ const CustomLeftArrow = ({ onClick }) => {
     <button
       onClick={onClick}
       className="absolute z-10 left-0 bg-primary opacity-50 p-4 rounded-2xl hover:opacity-100"
+      aria-label="Anterior"
+      title="Anterior"
     >
       <ChevronLeftIcon className="text-background font-bold" />
     </button>
