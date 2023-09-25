@@ -6,11 +6,15 @@ import { XIcon } from './icons/XIcon'
 import { getNearestIndex } from '../utils/getNearestIndex'
 import { useStaticQuery, graphql } from 'gatsby'
 import { CtaButton } from './CtaButton'
+import { InstagramIcon } from './icons/InstagramIcon'
+import { useSocialMediaLinks } from '../hooks/useSocialMediaLinks'
+import { WhatsappIcon } from './icons/WhatsappIcon'
 
 export function Header({ sections }) {
   const [scrollPosition, setScrollPosition] = useState(0)
   const [activeIndex, setActiveIndex] = useState(0)
   const [isOpen, setIsOpen] = useState(false)
+  const { whatsapp, instagram } = useSocialMediaLinks()
   const {
     dataYaml: { cta },
   } = useStaticQuery(graphql`
@@ -65,7 +69,7 @@ export function Header({ sections }) {
     >
       <div className="container flex gap-4 justify-between items-center mx-auto">
         <a href={firstSectionId}>
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <StaticImage
               src="../images/logo.svg"
               alt="Débora Martins Corrêa Logo"
@@ -74,7 +78,7 @@ export function Header({ sections }) {
               className="w-8/12"
             />
           </div>
-          <div className="block lg:hidden">
+          <div className="block xl:hidden">
             <StaticImage
               src="../images/logo-icon.svg"
               alt="Débora Martins Corrêa Logo"
@@ -85,7 +89,27 @@ export function Header({ sections }) {
           </div>
         </a>
         <nav className="hidden md:flex gap-8">{links}</nav>
-        <CtaButton href={lastSectionId}>{cta}</CtaButton>
+        <div className="hidden md:flex">
+          <a
+            href={whatsapp}
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary"
+          >
+            <WhatsappIcon className="inline" />
+          </a>
+          <a
+            href={instagram}
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary"
+          >
+            <InstagramIcon className="inline" />
+          </a>
+          <CtaButton className="ml-2" href={lastSectionId}>
+            {cta}
+          </CtaButton>
+        </div>
         <button
           className="md:hidden text-primary p-2 transition-all"
           onClick={() => setIsOpen((state) => !state)}

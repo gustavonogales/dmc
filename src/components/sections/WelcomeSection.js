@@ -2,10 +2,10 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { useStaticQuery, graphql } from 'gatsby'
 import { CtaButton } from '../CtaButton'
-import { useWhatsappLink } from '../../hooks/useWhatsappLink'
+import { useSocialMediaLinks } from '../../hooks/useSocialMediaLinks'
 
 export const WelcomeSection = React.forwardRef((props, ref) => {
-  const whatsappLink = useWhatsappLink()
+  const { whatsapp } = useSocialMediaLinks()
   const {
     dataYaml: { welcome: data },
   } = useStaticQuery(graphql`
@@ -34,7 +34,7 @@ export const WelcomeSection = React.forwardRef((props, ref) => {
           <p className="font-body text-sm sm:text-base md:text-lg leading-body text-primary">
             {data.description}
           </p>
-          <CtaButton href={whatsappLink} target="_blank">
+          <CtaButton href={whatsapp} target="_blank">
             {data.cta} <span className="font-bold">Whatsapp</span>
           </CtaButton>
         </div>

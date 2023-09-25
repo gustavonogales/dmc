@@ -4,8 +4,10 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { WhatsappIcon } from '../icons/WhatsappIcon'
 import { InstagramIcon } from '../icons/InstagramIcon'
 import { EmailIcon } from '../icons/EmailIcon'
+import { useSocialMediaLinks } from '../../hooks/useSocialMediaLinks'
 
 export const ContactSection = React.forwardRef((props, ref) => {
+  const { email, instagram, whatsapp } = useSocialMediaLinks()
   const {
     dataYaml: { contact: data },
   } = useStaticQuery(graphql`
@@ -22,13 +24,6 @@ export const ContactSection = React.forwardRef((props, ref) => {
     }
   `)
 
-  const whatsappLink = `https://wa.me/${data.whatsapp.replace(/\D/g, '')}`
-  const instagramLink = `https://www.instagram.com/${data.instagram.replace(
-    '@',
-    ''
-  )}`
-  const emailLink = `mailto:${data.email}`
-
   return (
     <section className="bg-background" ref={ref} {...props}>
       <div className="container mx-auto flex flex-col lg:flex-row px-4 py-20 gap-8 lg:gap-20">
@@ -42,7 +37,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
           <ul className="mt-20 text-center lg:text-start">
             <li>
               <a
-                href={whatsappLink}
+                href={whatsapp}
                 target="_blank"
                 rel="noreferrer"
                 className="text-primary"
@@ -53,7 +48,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
             </li>
             <li>
               <a
-                href={instagramLink}
+                href={instagram}
                 target="_blank"
                 rel="noreferrer"
                 className="text-primary"
@@ -64,7 +59,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
             </li>
             <li>
               <a
-                href={emailLink}
+                href={email}
                 target="_blank"
                 rel="noreferrer"
                 className="text-primary"
