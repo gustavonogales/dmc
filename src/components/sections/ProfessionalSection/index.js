@@ -38,7 +38,7 @@ export const ProfessionalSection = React.forwardRef((props, ref) => {
 
   return (
     <section className={`bg-primary ${styles?.pattern}`} ref={ref} {...props}>
-      <div className="container mx-auto flex flex-col gap-20 z-20 py-20 lg:py-40 relative">
+      <div className="container mx-auto flex flex-col z-20 py-20 lg:py-40 relative">
         <div className="flex gap-20 justify-end">
           <StaticImage
             src={'../../../images/physiotherapist.svg'}
@@ -48,11 +48,11 @@ export const ProfessionalSection = React.forwardRef((props, ref) => {
             quality={100}
             className="!object-contain !absolute left-20 top-20 hidden lg:block"
           />
-          <article className="flex flex-col text-center  w-full lg:w-1/2 xl:w-1/2  2xl:w-2/3">
-            <h2 className="text-background text-4xl font-display">
+          <article className="flex flex-col text-center w-full lg:w-1/2 xl:w-1/2  2xl:w-2/3">
+            <h2 className="text-background text-4xl font-display text-center lg:text-start">
               {data.name}
             </h2>
-            <span className="text-background font-body font-semibold">
+            <span className="text-background font-body font-semibold text-center lg:text-start">
               {data.id}
             </span>
             <p className="mt-6 font-body text-sm sm:text-base md:text-lg leading-body text-background text-start">
@@ -61,7 +61,7 @@ export const ProfessionalSection = React.forwardRef((props, ref) => {
             <p className="mt-4 font-body text-sm sm:text-base md:text-lg leading-body text-background text-start">
               {data.bioSecondParagraph}
             </p>
-            <h3 className="text-background text-4xl font-display mt-8">
+            <h3 className="text-background text-4xl font-display mt-12 text-center lg:text-start">
               {data.technicalSpecializations.title}
             </h3>
             <ul className="list-disc font-body text-background text-start mt-4 ml-6 text-sm sm:text-base md:text-lg">
@@ -72,7 +72,7 @@ export const ProfessionalSection = React.forwardRef((props, ref) => {
           </article>
         </div>
         <article>
-          <h3 className="text-background text-4xl font-display self-center text-center mb-8">
+          <h3 className="text-background mt-12 text-4xl font-display self-center text-center mb-8">
             {data.reviews.title}
           </h3>
           <Carousel

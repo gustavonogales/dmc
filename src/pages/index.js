@@ -18,7 +18,7 @@ const IndexPage = () => {
   const sections = [
     {
       id: 'welcome',
-      label: 'Home',
+      label: 'Início',
       ref: section1Ref,
       component: WelcomeSection,
     },
