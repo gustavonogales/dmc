@@ -5,7 +5,8 @@ module.exports = {
   siteMetadata: {
     title: 'Débora Martins Corrêa - Fisioterapeuta',
     siteUrl: 'https://deboramartinscorrea.netlify.app/',
-    description: 'Débora Martins Correa Fisioterapeuta',
+    description:
+      'Fisioterapeuta com atendimento domiciliar e humanizado. Especializada na reabilitação físico-motora e neurológica de pacientes idosos. Agende uma consulta de avaliação.',
   },
   plugins: [
     'gatsby-plugin-postcss',
