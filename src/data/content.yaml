@@ -48,28 +48,30 @@ professional:
         link: https://g.co/kgs/q55ais
 sessions:
   title: Sessões
-  firstContact:
-    title: Primeiro contato
-    description:
-      Na abordagem inicial, é feita uma consulta de avaliação profunda
-      com o paciente analisando seu histórico e queixa atual, assim podemos
-      definir um protocolo de exercícios para recuperação e melhora da condição
-      neurológica e/ou físico-motora.
-  treatmentSession:
-    title: Sessão de Tratamento
-    description: "Com duração entre 45 e 60 minutos, apoiado no protocolo de
-      exercícios personalizado, o paciente será supervisionado na execução
-      correta dos movimentos e uso de equipamentos. \n
-      Os resultados obtidos na sessão, são registrados e avaliados, para
-      garantir uma assistência alinhada aos objetivos estabelecidos desde o
-      primeiro contato, além disso, esses resultados são constantemente
-      reavaliados para garantir um acompanhamento contínuo."
-  severePainRelief:
-    title: Alívio de Dor Intensa
-    description: Uma abordagem emergencial, apoiada em técnicas para aliviar
-      mais rapidamente, crises de dor intensa em regiões localizadas do paciente,
-      com o objetivo de proporcionar alívio imediato ou de longo prazo e uma
-      recuperação permanente.
+  items:
+    - title: Primeiro contato
+      description:
+        Na abordagem inicial, é feita uma consulta de avaliação profunda
+        com o paciente analisando seu histórico e queixa atual, assim podemos
+        definir um protocolo de exercícios para recuperação e melhora da condição
+        neurológica e/ou físico-motora.
+    - title: Sessão de Tratamento
+      description: "Com duração entre 45 e 60 minutos, apoiado no protocolo de
+        exercícios personalizado, o paciente será supervisionado na execução
+        correta dos movimentos e uso de equipamentos. \n
+        Os resultados obtidos na sessão, são registrados e avaliados, para
+        garantir uma assistência alinhada aos objetivos estabelecidos desde o
+        primeiro contato, além disso, esses resultados são constantemente
+        reavaliados para garantir um acompanhamento contínuo."
+    - title: Alívio de Dor Intensa
+      description: Uma abordagem emergencial, apoiada em técnicas para aliviar
+        mais rapidamente, crises de dor intensa em regiões localizadas do paciente,
+        com o objetivo de proporcionar alívio imediato ou de longo prazo e uma
+        recuperação permanente.
+    - title: Teleatendimento
+      description: Pra quem busca praticidade e cuidado de qualquer lugar,  o
+        teleatendimento pode entregar uma  resposta rápida a uma necessidade
+        específica ou um acompanhamento mais abrangente em todo o tratamento.
   complementaryTreatments:
     title: Tratamentos complementares
     items:

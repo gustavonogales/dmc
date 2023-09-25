@@ -22,7 +22,7 @@ export const WelcomeSection = React.forwardRef((props, ref) => {
 
   return (
     <section
-      className="pt-8 md:py-20 px-4 container mx-auto bg-background"
+      className="pt-8 md:py-20 container mx-auto bg-background"
       ref={ref}
       {...props}
     >
@@ -34,11 +34,11 @@ export const WelcomeSection = React.forwardRef((props, ref) => {
           <p className="font-body text-sm sm:text-base md:text-lg leading-body text-primary">
             {data.description}
           </p>
-          <CtaButton href={whatsapp} target="_blank" rel="external">
+          <CtaButton href={whatsapp} target="_blank" rel="noreferrer">
             {data.cta} <span className="font-bold">Whatsapp</span>
           </CtaButton>
         </div>
-        <div className="flex-1 flex xl:justify-end justify-center items-center">
+        <div className="flex-1 flex xl:justify-end justify-center items-center flex-grow">
           <StaticImage
             as="div"
             src={'../../images/old-lady-ball.svg'}

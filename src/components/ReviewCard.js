@@ -32,8 +32,8 @@ export function ReviewCard({ title, description, link, ...props }) {
         <StaticImage
           className="select-none"
           src="../images/google-icon.png"
-          width="35"
-          height="35"
+          width={35}
+          height={35}
           alt="Logotipo do Google"
         />
       </a>

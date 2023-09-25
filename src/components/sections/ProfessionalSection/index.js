@@ -38,7 +38,7 @@ export const ProfessionalSection = React.forwardRef((props, ref) => {
 
   return (
     <section className={`bg-primary ${styles?.pattern}`} ref={ref} {...props}>
-      <div className="container mx-auto flex flex-col gap-20 z-20 px-4 py-20 lg:py-40 relative">
+      <div className="container mx-auto flex flex-col gap-20 z-20 py-20 lg:py-40 relative">
         <div className="flex gap-20 justify-end">
           <StaticImage
             src={'../../../images/physiotherapist.svg'}
@@ -89,7 +89,7 @@ export const ProfessionalSection = React.forwardRef((props, ref) => {
                   min: 1536,
                 },
                 items:
-                  data.reviews.items.length < 4 ? data.reviews.items.length : 4,
+                  data.reviews.items.length < 3 ? data.reviews.items.length : 3,
               },
               xl: {
                 breakpoint: {

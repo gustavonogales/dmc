@@ -28,7 +28,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
 
   return (
     <section className="bg-background" ref={ref} {...props}>
-      <div className="container mx-auto flex flex-col lg:flex-row px-4 py-20 gap-8 lg:gap-20">
+      <div className="container mx-auto flex flex-col lg:flex-row py-20 gap-8 lg:gap-20 lg:items-center">
         <div className="flex-1 flex flex-col items-center lg:items-start">
           <h2 className="font-display text-primary text-4xl sm:text-6xl text-center lg:text-start">
             {data.title}
@@ -52,7 +52,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
               <a
                 href={instagram}
                 target="_blank"
-                rel="external"
+                rel="noreferrer"
                 className="text-primary"
               >
                 <InstagramIcon className="inline" />
@@ -63,7 +63,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
               <a
                 href={email}
                 target="_blank"
-                rel="external"
+                rel="noreferrer"
                 className="text-primary"
               >
                 <EmailIcon className="inline" />
@@ -75,7 +75,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
             className="mt-20 mb-10 lg:mb-0"
             href={whatsapp}
             target="_blank"
-            rel="external"
+            rel="noreferrer"
           >
             {data.cta} <span className="font-bold">Whatsapp</span>
           </CtaButton>

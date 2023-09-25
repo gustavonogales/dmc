@@ -88,7 +88,7 @@ export function Header({ sections }) {
             />
           </div>
         </a>
-        <nav className="hidden md:flex gap-8">{links}</nav>
+        <nav className="hidden md:flex gap-4 lg:gap-8">{links}</nav>
         <div className="hidden md:flex">
           <a
             href={whatsapp}

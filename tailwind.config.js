@@ -15,10 +15,15 @@ module.exports = {
     minHeight: {
       80: '20rem',
     },
-    // container: {
-    //   xl: '800px',
-    //   '2xl': '1280px',
-    // },
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '1rem',
+        lg: '4rem',
+        xl: '6rem',
+        '2xl': '10rem',
+      },
+    },
     extend: {
       colors: {
         primary: 'var(--primary-color)',
