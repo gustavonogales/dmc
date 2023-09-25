@@ -52,7 +52,7 @@ export const ProfessionalSection = React.forwardRef((props, ref) => {
             <h2 className="text-background text-4xl font-display">
               {data.name}
             </h2>
-            <span className="text-background">{data.id}</span>
+            <span className="text-background font-body">{data.id}</span>
             <p className="mt-6 font-body text-sm sm:text-base md:text-lg leading-body text-background text-center lg:text-start">
               {data.bio}
             </p>
