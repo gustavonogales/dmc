@@ -31,11 +31,11 @@ export const Seo = ({ title, description, pathname, children }) => {
       <meta name="og:type" content="website" />
       <meta name="og:title" content={seo.title} />
       <meta name="og:description" content={seo.description} />
-      <meta name="og:image" content={`${seo.url}/icon.png`} />
-      <meta name="og:image:secure_url" content={`${seo.url}/icon.png`} />
+      <meta name="og:image" content={`${seo.url}/images/card.png`} />
+      <meta name="og:image:secure_url" content={`${seo.url}/images/card.png`} />
       <meta name="og:image:type" content="image/png" />
-      <meta name="og:image:width" content="512" />
-      <meta name="og:image:height" content="512" />
+      <meta name="og:image:width" content="1200" />
+      <meta name="og:image:height" content="630" />
       <meta name="og:locale" content="pt_BR" />
       <meta name="og:site_name" content={seo.title} />
       {children}
