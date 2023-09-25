@@ -1,9 +1,10 @@
-cta: Agende agora!
+cta: Agendar agora!
 welcome:
   title: Atendimento Personalizado
-  description: Na Fisioterapia, entendemos a
-    importância de fornecer um cuidado personalizado e eficaz para cada indivíduo,
-    firmando o compromisso de te ajudar a atingir seus objetivos.
+  description: Na Fisioterapia, entendemos a importância de fornecer um cuidado
+    personalizado e eficaz para cada indivíduo, firmando o compromisso de te
+    ajudar a atingir seus objetivos.
+  cta: Entrar em contato pelo
 professional:
   name: Débora Martins Corrêa
   id: 'CREFITO 3: 326975-F'
@@ -36,6 +37,7 @@ contact:
   whatsapp: +55 11 94714-3859
   instagram: '@_deboramcorrea'
   email: deboramcorrea@gmail.com
+  cta: Entrar em contato pelo
 footer:
   copyright: Todos os direitos reservados | 2023
   poweredBy: Desenvolvido por

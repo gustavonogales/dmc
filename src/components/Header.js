@@ -4,12 +4,22 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { HamburguerIcon } from './icons/HamburguerIcon'
 import { XIcon } from './icons/XIcon'
 import { getNearestIndex } from '../utils/getNearestIndex'
+import { useStaticQuery, graphql } from 'gatsby'
 import { CtaButton } from './CtaButton'
 
 export function Header({ sections }) {
   const [scrollPosition, setScrollPosition] = useState(0)
   const [activeIndex, setActiveIndex] = useState(0)
   const [isOpen, setIsOpen] = useState(false)
+  const {
+    dataYaml: { cta },
+  } = useStaticQuery(graphql`
+    query {
+      dataYaml {
+        cta
+      }
+    }
+  `)
 
   useEffect(() => {
     const updatePosition = () => {
@@ -44,6 +54,9 @@ export function Header({ sections }) {
     [activeIndex, sections]
   )
 
+  const firstSectionId = `#${sections[0].id}`
+  const lastSectionId = `#${sections[sections.length - 1].id}`
+
   return (
     <header
       className={`mx-auto py-2 px-4 lg:p-4 sticky top-0 left-0 right-0 bg-background z-50 transition-shadow 
@@ -51,7 +64,7 @@ export function Header({ sections }) {
     `}
     >
       <div className="container flex gap-4 justify-between items-center mx-auto">
-        <a href={`#${sections[0].id}`}>
+        <a href={firstSectionId}>
           <div className="hidden lg:block">
             <StaticImage
               src="../images/logo.svg"
@@ -72,7 +85,7 @@ export function Header({ sections }) {
           </div>
         </a>
         <nav className="hidden md:flex gap-8">{links}</nav>
-        <CtaButton />
+        <CtaButton href={lastSectionId}>{cta}</CtaButton>
         <button
           className="md:hidden text-primary p-2 transition-all"
           onClick={() => setIsOpen((state) => !state)}

@@ -2,8 +2,10 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { useStaticQuery, graphql } from 'gatsby'
 import { CtaButton } from '../CtaButton'
+import { useWhatsappLink } from '../../hooks/useWhatsappLink'
 
 export const WelcomeSection = React.forwardRef((props, ref) => {
+  const whatsappLink = useWhatsappLink()
   const {
     dataYaml: { welcome: data },
   } = useStaticQuery(graphql`
@@ -12,6 +14,7 @@ export const WelcomeSection = React.forwardRef((props, ref) => {
         welcome {
           title
           description
+          cta
         }
       }
     }
@@ -19,11 +22,11 @@ export const WelcomeSection = React.forwardRef((props, ref) => {
 
   return (
     <section
-      className="px-4 container mx-auto bg-background"
+      className="pt-8 md:py-20 px-4 container mx-auto bg-background"
       ref={ref}
       {...props}
     >
-      <div className="mt-8 md:my-20 flex gap-10 lg:gap-20 flex-col h-auto lg:flex-row ">
+      <div className="flex gap-10 lg:gap-20 flex-col h-auto lg:flex-row ">
         <div className="flex-1 flex gap-6 flex-col text-center justify-center lg:text-left items-center lg:items-start sm:py-8">
           <h1 className="text-primary font-display line-clamp-2 text-4xl sm:text-6xl md:text-8xl">
             {data.title}
@@ -31,7 +34,9 @@ export const WelcomeSection = React.forwardRef((props, ref) => {
           <p className="font-body text-sm sm:text-base md:text-lg leading-body text-primary">
             {data.description}
           </p>
-          <CtaButton />
+          <CtaButton href={whatsappLink} target="_blank">
+            {data.cta} <span className="font-bold">Whatsapp</span>
+          </CtaButton>
         </div>
         <div className="flex-1 flex xl:justify-end justify-center items-center">
           <StaticImage
