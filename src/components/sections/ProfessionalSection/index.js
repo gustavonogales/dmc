@@ -17,7 +17,12 @@ export const ProfessionalSection = React.forwardRef((props, ref) => {
         professional {
           name
           id
-          description
+          bio
+          bioSecondParagraph
+          technicalSpecializations {
+            title
+            items
+          }
           reviews {
             title
             items {
@@ -48,8 +53,19 @@ export const ProfessionalSection = React.forwardRef((props, ref) => {
             </h2>
             <span className="text-background">{data.id}</span>
             <p className="mt-6 font-body text-sm sm:text-base md:text-lg leading-body text-background text-center lg:text-start">
-              {data.description}
+              {data.bio}
             </p>
+            <p className="mt-4 font-body text-sm sm:text-base md:text-lg leading-body text-background text-center lg:text-start">
+              {data.bioSecondParagraph}
+            </p>
+            <h3 className="text-background text-4xl font-display mt-8">
+              {data.technicalSpecializations.title}
+            </h3>
+            <ul className="list-disc font-body text-background text-start mt-4 ml-6 text-sm sm:text-base md:text-lg">
+              {data.technicalSpecializations.items.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </article>
         </div>
         <article>

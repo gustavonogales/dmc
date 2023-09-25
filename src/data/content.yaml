@@ -8,9 +8,19 @@ welcome:
 professional:
   name: Débora Martins Corrêa
   id: 'CREFITO 3: 326975-F'
-  description: Na Fisioterapia, entendemos a importância de fornecer um cuidado
-    personalizado e eficaz para cada indivíduo, firmando o compromisso de te
-    ajudar a atingir seus objetivos.
+  bio: Me formei em Fisioterapia com o propósito de traçar e acompanhar uma jornada de bem estar em cada atendimento.
+  bioSecondParagraph:
+    Possuo uma abordagem profissional humanizada, com foco no atendimento domiciliar e experiência
+    dedicada à reabilitação de idosos.
+  technicalSpecializations:
+    title: Especializações técnicas
+    items:
+      - Avaliação da Dor
+      - Bandagem Rígida
+      - Mobilização Neural
+      - Mobilização Articular
+      - Agulhamento a Seco
+      - Contrologia (Método Pilates)
   reviews:
     title: Depoimentos
     items:
