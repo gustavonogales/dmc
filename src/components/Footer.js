@@ -9,7 +9,7 @@ export function Footer() {
       dataYaml {
         footer {
           copyright
-          poweredBy
+          # poweredBy
         }
       }
     }
@@ -20,9 +20,9 @@ export function Footer() {
       <span className="text-primary font-body flex-1 text-center text-sm sm:text-base md:text-lg">
         {data.copyright}
       </span>
-      <span className="block md:absolute md:right-4 text-primary font-body text-sm sm:text-base md:text-lg">
+      {/* <span className="block md:absolute md:right-4 text-primary font-body text-sm sm:text-base md:text-lg">
         {data.poweredBy}
-      </span>
+      </span> */}
     </footer>
   )
 }
