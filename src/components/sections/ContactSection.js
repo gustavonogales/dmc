@@ -27,7 +27,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
   return (
     <section className="bg-background" ref={ref} {...props}>
       <div className="container mx-auto flex flex-col lg:flex-row px-4 py-20 gap-8 lg:gap-20">
-        <div className="flex-1 flex-grow">
+        <div className="flex-1">
           <h2 className="font-display text-primary text-4xl sm:text-6xl text-center lg:text-start">
             {data.title}
           </h2>
@@ -70,7 +70,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
             </li>
           </ul>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex-grow">
           <StaticImage
             src={'../../images/old-man-woman-wheel-chair.svg'}
             alt="Senhor idoso em pé ao lado de uma moça cadeirante ambos de frente para a fisioterapeuta, que está acenando com a mão"
