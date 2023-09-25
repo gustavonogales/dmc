@@ -46,16 +46,17 @@ export const SessionsSection = React.forwardRef((props, ref) => {
           {data.title}
         </h2>
         {content.map((item) => (
-          <span key={item.title} className="mt-10 text-primary text-lg">
-            <h3 className="font-bold text-xl inline">{item.title}: </h3>
-            <span
+          <div key={item.title} className="mt-10 text-primary text-lg">
+            <h3 className="text-2xl inline font-display">{item.title}</h3>
+            <div
+              className="inline"
               dangerouslySetInnerHTML={{
                 __html: addBreakLine(item.description),
               }}
-            ></span>
-          </span>
+            ></div>
+          </div>
         ))}
-        <h3 className="text-primary font-bold text-xl mt-10">
+        <h3 className="text-primary font-display text-2xl mt-10">
           {data.complementaryTreatments.title}
         </h3>
         <ul className="list-disc ml-6 text-primary text-lg">

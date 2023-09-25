@@ -8,7 +8,7 @@ welcome:
 professional:
   name: Débora Martins Corrêa
   id: 'CREFITO 3: 326975-F'
-  bio: Me formei em Fisioterapia com o propósito de traçar e acompanhar uma jornada de bem estar em cada atendimento.
+  bio: Me formei em Fisioterapia com o propósito de traçar e acompanhar uma jornada de bem-estar em cada atendimento.
   bioSecondParagraph:
     Possuo uma abordagem profissional humanizada, com foco no atendimento domiciliar e experiência
     dedicada à reabilitação de idosos.
@@ -24,21 +24,28 @@ professional:
   reviews:
     title: Depoimentos
     items:
-      - name: Gustavo Oquendo Nogales
-        content:
-          Na Fisioterapia, entendemos a importância de fornecer um cuidado
-          personalizado e eficaz para cada indivíduo, firmando o compromisso de te
-          ajudar a atingir seus objetivos.
-      - name: Cleide Leone
-        content:
-          Na Fisioterapia, entendemos a importância de fornecer um cuidado
-          personalizado e eficaz para cada indivíduo, firmando o compromisso de te
-          ajudar a atingir seus objetivos.
-      - name: Bruno Martins Corrêa
-        content:
-          Na Fisioterapia, entendemos a importância de fornecer um cuidado
-          personalizado e eficaz para cada indivíduo, firmando o compromisso de te
-          ajudar a atingir seus objetivos.
+      - name: Bruno dos Anjos Almeida
+        content: Excelente profissional. Além da atenção, direciona o
+          treinamento de acordo com suas necessidades e objetivos.
+        link: https://g.co/kgs/e3AEi5
+      - name: Venilton Antunes
+        content: Profissional muito séria e competente. Sou motorista e sinto
+          dores nas costasObrigado por me ajudar a tirar minhas dores.
+        link: https://g.co/kgs/a1f7Y6
+      - name: Luana Coneglian
+        content: A Débora é uma profissional incrível! Sempre muito atenciosa,
+          dedicada e comprometida. O pilates traz, sem dúvida, uma outra
+          qualidade de vida e que, acompanhado de uma excelente profissional,
+          faz ainda mais diferença.
+        link: https://g.co/kgs/Jreixi
+      - name: Cleide Leone M. Antunes
+        content: Profissional como poucas, o respeito, delicadeza e a atenção
+          que dispensa ao meu problema é incrível. Obrigada por cuidar de mim.
+          Recomendo.
+        link: https://g.co/kgs/L8QMHV
+      - name: Antonia Luz
+        content: Muito bom, ela me trata com muito carinho e atenção. Recomendo
+        link: https://g.co/kgs/q55ais
 sessions:
   title: Sessões
   firstContact:

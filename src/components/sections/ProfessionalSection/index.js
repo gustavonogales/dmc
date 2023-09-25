@@ -28,6 +28,7 @@ export const ProfessionalSection = React.forwardRef((props, ref) => {
             items {
               name
               content
+              link
             }
           }
         }
@@ -118,6 +119,7 @@ export const ProfessionalSection = React.forwardRef((props, ref) => {
                 key={review.name}
                 title={review.name}
                 description={review.content}
+                link={review.link}
               />
             ))}
           </Carousel>
