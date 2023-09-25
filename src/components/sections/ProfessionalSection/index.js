@@ -48,15 +48,17 @@ export const ProfessionalSection = React.forwardRef((props, ref) => {
             quality={100}
             className="!object-contain !absolute left-20 top-20 hidden lg:block"
           />
-          <article className="flex flex-col text-center items-center lg:items-start w-full lg:w-1/2 xl:w-1/2  2xl:w-2/3">
+          <article className="flex flex-col text-center  w-full lg:w-1/2 xl:w-1/2  2xl:w-2/3">
             <h2 className="text-background text-4xl font-display">
               {data.name}
             </h2>
-            <span className="text-background font-body">{data.id}</span>
-            <p className="mt-6 font-body text-sm sm:text-base md:text-lg leading-body text-background text-center lg:text-start">
+            <span className="text-background font-body font-semibold">
+              {data.id}
+            </span>
+            <p className="mt-6 font-body text-sm sm:text-base md:text-lg leading-body text-background text-start">
               {data.bio}
             </p>
-            <p className="mt-4 font-body text-sm sm:text-base md:text-lg leading-body text-background text-center lg:text-start">
+            <p className="mt-4 font-body text-sm sm:text-base md:text-lg leading-body text-background text-start">
               {data.bioSecondParagraph}
             </p>
             <h3 className="text-background text-4xl font-display mt-8">
