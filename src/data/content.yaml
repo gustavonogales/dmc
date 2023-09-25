@@ -39,6 +39,36 @@ professional:
           Na Fisioterapia, entendemos a importância de fornecer um cuidado
           personalizado e eficaz para cada indivíduo, firmando o compromisso de te
           ajudar a atingir seus objetivos.
+sessions:
+  title: Sessões
+  firstContact:
+    title: Primeiro contato
+    description:
+      Na abordagem inicial, é feita uma consulta de avaliação profunda
+      com o paciente analisando seu histórico e queixa atual, assim podemos
+      definir um protocolo de exercícios para recuperação e melhora da condição
+      neurológica e/ou físico-motora.
+  treatmentSession:
+    title: Sessão de Tratamento
+    description: Com duração entre 45 e 60 minutos, apoiado no protocolo de
+      exercícios personalizado, o paciente será supervisionado na execução
+      correta dos movimentos e uso de equipamentos.
+      >
+      Os resultados obtidos na sessão, são registrados e avaliados, para
+      garantir uma assistência alinhada aos objetivos estabelecidos desde o
+      primeiro contato, além disso, esses resultados são constantemente
+      reavaliados para garantir um acompanhamento contínuo.
+  severePainRelief:
+    title: Alívio de Dor Intensa
+    description: Uma abordagem emergencial, apoiada em técnicas para aliviar
+      mais rapidamente, crises de dor intensa em regiões localizadas do paciente,
+      com o objetivo de proporcionar alívio imediato ou de longo prazo e uma
+      recuperação permanente.
+  complementaryTreatments:
+    title: Tratamentos complementares
+    items:
+      - 'Eletroterapia: Indicado para tratamento e alívio das dores e recuperação da função muscular.'
+      - 'Ultrassom terapêutico: Indicado para recuperação tecidual.'
 contact:
   title: Agende sua consulta
   description: Atendimento Domiciliar em São Paulo e Zona Oeste Metropolitana.

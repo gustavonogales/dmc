@@ -15,10 +15,15 @@ module.exports = {
     minHeight: {
       80: '20rem',
     },
+    // container: {
+    //   xl: '800px',
+    //   '2xl': '1280px',
+    // },
     extend: {
       colors: {
         primary: 'var(--primary-color)',
         background: 'var(--background-color)',
+        almostWhite: 'var(--almost-white-color)',
         accent: 'var(--accent-color)',
       },
     },

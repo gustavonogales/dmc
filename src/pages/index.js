@@ -5,8 +5,9 @@ import {
   WelcomeSection,
   ProfessionalSection,
   ContactSection,
+  SessionsSection,
 } from '../components/sections'
-import { TreatmentsSection } from '../components/sections/TreatmentsSection'
+import { Seo } from '../components/Seo'
 
 const IndexPage = () => {
   const section1Ref = React.useRef()
@@ -28,10 +29,10 @@ const IndexPage = () => {
       component: ProfessionalSection,
     },
     {
-      id: 'treatments',
-      label: 'Tratamentos',
+      id: 'sessions',
+      label: 'Sessões',
       ref: section3Ref,
-      component: TreatmentsSection,
+      component: SessionsSection,
     },
     {
       id: 'contact',
@@ -60,7 +61,6 @@ export const Head = () => (
   <>
     <html className="scroll-smooth" lang="pt-BR" />
     <body className="bg-background" />
-    <title>Débora Martins Corrêa - Fisioterapeuta</title>
-    <meta name="description" content="Débora Martins Correa Fisioterapeuta" />
+    <Seo />
   </>
 )
