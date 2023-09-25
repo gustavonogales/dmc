@@ -6,10 +6,10 @@ import { HamburguerIcon } from './icons/HamburguerIcon'
 import { XIcon } from './icons/XIcon'
 import { getNearestIndex } from '../utils/getNearestIndex'
 import { useStaticQuery, graphql } from 'gatsby'
-import { CtaButton } from './CtaButton'
 import { InstagramIcon } from './icons/InstagramIcon'
 import { useSocialMediaLinks } from '../hooks/useSocialMediaLinks'
 import { WhatsappIcon } from './icons/WhatsappIcon'
+import { Button } from './Button'
 
 export function Header({ sections }) {
   const [scrollPosition, setScrollPosition] = useState(0)
@@ -109,9 +109,12 @@ export function Header({ sections }) {
           >
             <InstagramIcon className="inline" />
           </OutboundLink>
-          <CtaButton className="ml-2" href={lastSectionId}>
+          <Button
+            className="text-sm font-medium text-white ml-2"
+            href={lastSectionId}
+          >
             {cta}
-          </CtaButton>
+          </Button>
         </div>
         <button
           className="md:hidden text-primary p-2 transition-all"
