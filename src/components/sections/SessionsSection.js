@@ -13,10 +13,6 @@ export const SessionsSection = React.forwardRef((props, ref) => {
             title
             description
           }
-          complementaryTreatments {
-            title
-            items
-          }
         }
       }
     }
@@ -42,14 +38,6 @@ export const SessionsSection = React.forwardRef((props, ref) => {
             ></div>
           </div>
         ))}
-        <h3 className="text-primary font-display text-2xl mt-10">
-          {data.complementaryTreatments.title}
-        </h3>
-        <ul className="list-disc ml-6 text-primary text-lg">
-          {data.complementaryTreatments.items.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
       </div>
     </section>
   )
