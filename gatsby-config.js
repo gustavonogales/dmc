@@ -1,10 +1,15 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+}).the
+
 module.exports = {
   siteMetadata: {
     title: 'Débora Martins Corrêa - Fisioterapeuta',
-    siteUrl: 'https://deboramartinscorrea.netlify.app/',
+    siteUrl: 'https://deboramartinscorrea.netlify.app',
     description:
       'Fisioterapeuta com atendimento domiciliar e humanizado. Especializada na reabilitação físico-motora e neurológica de pacientes idosos. Agende uma consulta de avaliação.',
   },
@@ -12,6 +17,7 @@ module.exports = {
     'gatsby-plugin-postcss',
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-use-query-params',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -24,7 +30,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/images/',
+        path: `${__dirname}/src/images`,
       },
       __key: 'images',
     },
@@ -40,7 +46,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          'G-EB90CXG7MY', // Google Analytics / GA
+          process.env.GA_KEY, // Google Analytics / GA
         ],
         pluginConfig: {
           head: true,

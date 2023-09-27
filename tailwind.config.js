@@ -30,6 +30,16 @@ module.exports = {
         background: 'var(--background-color)',
         almostWhite: 'var(--almost-white-color)',
         accent: 'var(--accent-color)',
+        accentLight: 'var(--accent-light-color)',
+      },
+      keyframes: {
+        hide: {
+          '0%': { opacity: 1 },
+          '100%': { opacity: 0, display: 'hidden', bottom: -200 },
+        },
+      },
+      animation: {
+        hide: 'hide 1s ease-in-out forwards',
       },
     },
   },

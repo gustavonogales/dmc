@@ -8,6 +8,7 @@ import {
   SessionsSection,
 } from '../components/sections'
 import { Seo } from '../components/Seo'
+import { CookiesBanner } from '../components/CookiesBanner'
 
 const IndexPage = () => {
   const section1Ref = React.useRef()
@@ -51,6 +52,7 @@ const IndexPage = () => {
         ))}
       </main>
       <Footer />
+      <CookiesBanner />
     </>
   )
 }
