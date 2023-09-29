@@ -70,7 +70,7 @@ export function Header({ sections }) {
     >
       <div className="container flex gap-4 justify-between items-center mx-auto">
         <a href={firstSectionId}>
-          <div className="hidden xl:block">
+          <div className="hidden xs:block sm:block md:hidden xl:block">
             <StaticImage
               src="../images/logo.svg"
               alt="Débora Martins Corrêa Logo"
@@ -79,7 +79,7 @@ export function Header({ sections }) {
               className="w-8/12"
             />
           </div>
-          <div className="block xl:hidden">
+          <div className="block xs:hidden sm:hidden md:block xl:hidden">
             <StaticImage
               src="../images/logo-icon.svg"
               alt="Débora Martins Corrêa Logo"
