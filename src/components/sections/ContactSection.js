@@ -73,7 +73,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
             </li>
           </ul>
           <CtaButton
-            className="mt-20 mb-10 lg:mb-0"
+            className="mt-20 mb-10 lg:mb-0 text-center"
             href={whatsapp}
             target="_blank"
             rel="noreferrer"
