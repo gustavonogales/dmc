@@ -60,7 +60,6 @@ export function Header({ sections }) {
   )
 
   const firstSectionId = `#${sections[0].id}`
-  const lastSectionId = `#${sections[sections.length - 1].id}`
 
   return (
     <header
@@ -111,7 +110,9 @@ export function Header({ sections }) {
           </OutboundLink>
           <Button
             className="text-sm font-medium text-white ml-2"
-            href={lastSectionId}
+            href={whatsapp}
+            target="_blank"
+            rel="noreferrer"
           >
             {cta}
           </Button>

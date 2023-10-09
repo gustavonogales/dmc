@@ -20,7 +20,9 @@ export const ContactSection = React.forwardRef((props, ref) => {
           description
           whatsapp
           instagram
-          email
+          email {
+            link
+          }
           cta
         }
       }
@@ -68,7 +70,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
                 className="text-primary"
               >
                 <EmailIcon className="inline" />
-                <span className="font-bold">{data.email}</span>
+                <span className="font-bold">{data.email.link}</span>
               </OutboundLink>
             </li>
           </ul>
