@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: 'Débora Martins Corrêa - Fisioterapeuta',
+    title: 'Fisioterapia Domiciliar - Débora Martins Corrêa',
     siteUrl: 'https://deborafisio.com',
     description:
       'Fisioterapeuta com atendimento domiciliar e humanizado. Especializada na reabilitação físico-motora e neurológica de pacientes idosos. Agende uma consulta de avaliação.',
