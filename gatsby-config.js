@@ -40,7 +40,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          'GTM-WN8K2JLT', // Google Analytics / GA
+          'G-3NMW9GSDW4',
+          'GTM-WN8K2JLT',
         ],
         pluginConfig: {
           head: true,
